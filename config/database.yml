@@ -20,6 +20,10 @@ test:
   <<: *default
   database: db/test.sqlite3
 
-production:
+development:
   adapter: postgresql
-  prepared_statements: false
+  encoding: unicode
+  database: blog_development
+  pool: 5
+  username: blog
+  password:
